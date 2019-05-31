@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One:100,200,300,400,500,600,700|Abel:100,200,300,400,500,600,700');
+
+/*-----------------------------------------Body */
+
+body {
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    margin-top: 90px; /*-------Bring header image down so fixed nav doesn't cover half pic when window is resized-----*/
+
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+/*-----------------------------------------Header Image */
+
+
+.header-img {
+    background: url('../images/header/headercolor.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 56.5%; /* = ( 600 / 1600 ) x 100 used to resize image when viewing on smaller devices (code from: https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap)*/
+
+}
+
+
+/*-----------------------------------------Content Containers */
+
+.container-wrapper--fionaappleabout {
+    background: url('../images/container-background/about.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container-wrapper--fionaapplemusic {
+    background: url('../images/container-background/music.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container-wrapper--fionaapplevideo {
+    background: url('../images/container-background/videos.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container-wrapper--fionaapplephotos {
+    background: url('../images/container-background/photos.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container-wrapper--fionaappletour {
+    background: url('../images/container-background/tour.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container-wrapper--fionaappleinsta {
+    background: url('../images/container-background/insta.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.about-content-container, 
+.music-content-container,
+.video-content-container,
+.photo-content-container,
+.tour-content-container,
+.follow-content-container{
+    padding: 95px 40px 95px 40px;
+}
+
+   /*----space between vertical stacking --solution from https://stackoverflow.com/questions/35662726/how-do-i-add-space-in-between-a-vertical-stacking-column-for-mobile-in-bootstrap ----*/
+   
+ @media (max-width: 800px) {
+     .grid-container > div {
+         margin-bottom: 15px;
+     }
+  }
+   
+
+/*----------------------------------------- Modal Styling */
+    
+.modal-body{
+    color: #615650;  
+    text-align: center;
+}
+
+.modal-content{
+    background-color: #dbc7bd; 
+    padding: 20px; 
+}
+
+.btn-dark{
+    background-color: rgb(0, 0, 0);
+    color: rgb(237, 227, 222);
+    border: none;
+    padding: 14px 20px;
+    margin: auto;
+    text-transform: uppercase;    
+    font-family: 'Abel', sans-serif;
+    border-radius: 0px;
+}
+
+.btn-dark:hover{
+    color: rgb(237, 227, 222);
+    background-color: rgb(89, 89, 89);
+}
+
+.btn-dark:active:focus{
+    color: rgb(237, 227, 222);
+    background-color: rgb(89, 89, 89);
+}
+
+   /*-----Continue and Privacy Policy Links*/
+   
+.link-btn{
+    color: #dbc7bd;
+    font-size: large;
+    font-weight: bold;
+}
+
+.link-btn:hover{
+    color: #dbc7bd;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.link-btn:focus{
+    color: #dbc7bd;
+    outline: 0;
+}
+
+
+/*-----------------------------------------All Images */
+
+.img-hover:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+
+/*-----------------------------------------Form Controls */
+
+::placeholder {
+    color: grey !important;
+    text-transform: uppercase;
+}
+
+input[type=email] {
+    margin: 0px;
+    border-style: solid;
+    border-width: 1px;  
+    border-color: #ede3de; 
+    border-radius:0px;
+}
+
+
+textarea{
+    margin: 0px;
+    text-indent: 0.05em;
+    border-style: solid;  
+    border-width: 1px;  
+    border-color: #ede3de; 
+    border-radius:0px;
+}
+
+   /*----submit button max-width on smaller screen :: used https://www.w3schools.com/css/css_rwd_mediaqueries.asp to help me draft the code----*/
+
+@media screen and (max-width: 600px) {
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+/*-----------------------------------------Navbar */
+
+.navbar-bg{
+    background-color: #615650;
+    border: 0;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: larger;
+}
+
+.navbar-brand:hover{
+    opacity: 0.6;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;     
+}
+
+.navbar-nav li a{
+    color: #dbc7bd !important;
+}
+
+.navbar-nav li a:hover{
+    opacity: 0.6;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;     
+}
+
+/*--change of colour of collapsable menu code was from user "eventyret" from slackforums who helped me with this query --*/
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(219, 199, 189, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgba(219, 199, 189, 1);
+} 
+
+.custom-toggler.navbar-toggler:hover {
+    opacity: 0.8;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+} 
+
+button:focus { 
+    outline:0 !important; 
+}
+
+.nav-link{
+    color: #dbc7bd;
+    font-size: large;
+}
+
+.nav-link:hover{
+    color: #dbc7bd;
+    opacity: 0.6;
+}
+
+.nav-link:focus{
+    color: #dbc7bd;
+    outline: 0;
+}
+
+
+/*-----------------------------------------About*/
+
+.about-heading{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    color: #dbc7bd;
+    margin: auto;
+    padding-bottom: 50px;
+    
+}
+
+.bio-content{
+    text-align: left;   
+    font-weight: bold;
+    font-size: large;
+    padding: 20px;
+    color: #f0f6f9;
+}
+
+
+
+/*-----------------------------------------Music*/
+
+.music-heading{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    color: #dbc7bd;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.music-player{
+    padding-bottom:4%; 
+    padding-top:5%;
+    width: 100%;
+    margin: auto;
+    border: none;
+}
+
+.buy-btn {
+    width: 100%;
+    max-width: 190px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.dropdown-menu{
+    background-color: black;
+}
+
+.dropdown-item{
+    background-color: black;
+    color: #dbc7bd;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dropdown-item:hover{
+    color: rgb(237, 227, 222);
+    background-color: rgb(89, 89, 89);    
+}
+
+
+
+/*-----------------------------------------Video */
+
+.video-heading{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    color: #dbc7bd;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.video-container {
+    height: 0;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.video-container-ratio {
+    padding-bottom: 45%;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+iframe{
+    border-width: 0px;
+}
+
+/*-----------------------------------------Photos*/
+
+.photo-heading{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    color: #dbc7bd;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+
+/*-----------------------------------------Tour*/
+
+.tour-heading{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Fjalla One', sans-serif;
+    color: #dbc7bd;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.mini-tour-heading{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Fjalla One', sans-serif;
+    color: #dbc7bd;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.tour-content{
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.calendar-icon{
+    color: #dbc7bd;
+    font-weight: bolder;
+}
+
+
+/*-----------------------------------------Follow*/
+
+.follow-heading{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    color: #dbc7bd;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+
+/*-----------------------------------------Footer*/
+
+footer{
+    background-color: #615650;
+    margin: 0;
+    position: absolute;    
+    padding: 65px;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+    /*---- Newsletter Sign Up ----*/
+
+.mail-content-container{
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Fjalla One', sans-serif;
+    color: #dbc7bd;
+    margin: auto;
+}
+
+    /*---- Social Links ----*/
+    
+.social-links li a i{
+    width: 67px;
+    height: 67px;
+    padding: 28px 0px;
+    border-radius: 60%;
+    font-size: 30px;
+    line-height: 10px;
+    text-align: center;
+    color: #fafafa;
+    background: #000000;
+     
+}
+
+.social-links li a i:hover{
+    opacity: 0.6;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;    
+}
+
+    /*---- Copyright ----*/
+    
+.copyright{
+    padding-top: 20px;
+    font-family: 'Abel', sans-serif;
+    color: #dbc7bd;
+}
+
